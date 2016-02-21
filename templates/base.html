@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} - Audrey Mavra McCormick</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    {% assets "scss_all" %}
+        <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+    {% endassets %}
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
 </body>
 </html>
