@@ -2,6 +2,7 @@ $font-stack-book: 'candela_book', Helvetica, sans-serif;
 $font-stack-bold: 'candela_boldbold', Helvetica, sans-serif;
 
 $primary-0: #E98B86;
+$primary-4: #821C17;
 
 body {
   font: 100% $font-stack-book;
@@ -12,6 +13,21 @@ h1 {
   font: 3em $font-stack-bold;
   color: $primary-0;
 }
+
+h3 {
+  font:1.5em $font-stack-bold;
+  color: $primary-4;
+  margin: 0;
+}
+
+h5 {
+  margin: 0 0 .5em;
+}
+
+div.blog_post {
+  margin-bottom: 3em;
+}
+
 
 @font-face {
   font-family: 'candela_boldbold';
