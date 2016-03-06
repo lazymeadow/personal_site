@@ -1,0 +1,9 @@
+{% macro post(title, published, updated, content) -%}
+    <div class="blog_post">
+        <h3>{{ title }}</h3>
+        <h5>{{ published }}</h5>
+        <div>
+            {{ content|safe }}
+        </div>
+    </div>
+{%- endmacro %}

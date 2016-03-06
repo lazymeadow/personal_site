@@ -1,11 +1,14 @@
 {% extends "base.html" %}
+{% from "art_blog/post_template.html" import post as post_template %}
 
 {% block title %}
     Art Blog
 {% endblock %}
 
 {% block content %}
-    <h1>Hey</h1>
-    <p>I don't have things yet</p>
+    <h1>Audrey Mavra McCormick</h1>
+    {% for post in posts %}
+        {{ post_template(post.title, post.published, post.updated, post.content) }}
+    {% endfor %}
     <a href="http://bananas.audreymavra.tk">Bananas!</a>
 {% endblock %}

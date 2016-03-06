@@ -22,9 +22,11 @@ fileConfig(config.config_file_name)
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
-from models.art_blog import *
 from art_blog import db
+from models.art_blog import *
+
 target_metadata = db.metadata
+
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
@@ -72,6 +74,7 @@ def run_migrations_online():
 
         with context.begin_transaction():
             context.run_migrations()
+
 
 if context.is_offline_mode():
     run_migrations_offline()
