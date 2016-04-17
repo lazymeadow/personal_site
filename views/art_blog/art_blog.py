@@ -7,9 +7,12 @@ from dateutil.parser import parse
 from flask import render_template, Blueprint
 from sqlalchemy import desc
 
-blog = Blueprint('art_blog', __name__, static_folder='static')
+blog = Blueprint('art_blog', __name__)
 
 from models.art_blog import Post, db
+
+from main_site import app
+blog.static_folder = app.static_folder
 
 
 def convert_date(date):
@@ -21,9 +24,7 @@ def convert_date(date):
 @blog.route('/', methods=['GET'], subdomain='blog')
 def index():
     try:
-        print "hi"
         posts = db.session.query(Post).order_by(desc(Post.published)).all()
-        print posts
 
         return render_template("art_blog/index.html", posts=posts)
     except Exception as e:
