@@ -7,7 +7,6 @@ from models.art_blog import db, Post
 app = Flask(__name__)
 
 # TODO make application configurations, so this isn't hardcoded for dev
-app.config['SERVER_NAME'] = 'blog.audreymavra.tk'  # 'audreymavra.localhost:1234'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = \
     'mysql+mysqldb://audrey:wjae98RY3@audreymavra-mysql.c9jbxcitzkqw.us-west-2.rds.amazonaws.com:3306/personal_site'
@@ -30,4 +29,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=1234)
+    app.run(host='0.0.0.0', port=24816)

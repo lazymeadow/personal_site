@@ -6,7 +6,6 @@ from models.art_blog import db
 app = Flask(__name__)
 
 # TODO make application configurations, so this isn't hardcoded for dev
-app.config['SERVER_NAME'] = 'audreymavra.tk'  # 'audreymavra.localhost:3579'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = \
     'mysql+mysqldb://audrey:wjae98RY3@audreymavra-mysql.c9jbxcitzkqw.us-west-2.rds.amazonaws.com:3306/personal_site'
