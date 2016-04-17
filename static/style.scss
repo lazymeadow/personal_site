@@ -31,22 +31,22 @@ div.blog_post {
 
 @font-face {
   font-family: 'candela_boldbold';
-  src: url('../views/banana/static/fonts/candela_bold_macroman/CandelaBold-webfont.eot');
-  src: url('../views/banana/static/fonts/candela_bold_macroman/CandelaBold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../views/banana/static/fonts/candela_bold_macroman/CandelaBold-webfont.woff') format('woff'),
-  url('../views/banana/static/fonts/candela_bold_macroman/CandelaBold-webfont.ttf') format('truetype'),
-  url('../views/banana/static/fonts/candela_bold_macroman/CandelaBold-webfont.svg#candela_boldbold') format('svg');
+  src: url('../static/fonts/candela_bold_macroman/CandelaBold-webfont.eot');
+  src: url('../static/fonts/candela_bold_macroman/CandelaBold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../static/fonts/candela_bold_macroman/CandelaBold-webfont.woff') format('woff'),
+  url('../static/fonts/candela_bold_macroman/CandelaBold-webfont.ttf') format('truetype'),
+  url('../static/fonts/candela_bold_macroman/CandelaBold-webfont.svg#candela_boldbold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'candela_book';
-  src: url('../views/banana/static/fonts/candela_book_macroman/CandelaBook-webfont.eot');
-  src: url('../views/banana/static/fonts/candela_book_macroman/CandelaBook-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../views/banana/static/fonts/candela_book_macroman/CandelaBook-webfont.woff') format('woff'),
-  url('../views/banana/static/fonts/candela_book_macroman/CandelaBook-webfont.ttf') format('truetype'),
-  url('../views/banana/static/fonts/candela_book_macroman/CandelaBook-webfont.svg#candela_boldbold') format('svg');
+  src: url('../static/fonts/candela_book_macroman/CandelaBook-webfont.eot');
+  src: url('../static/fonts/candela_book_macroman/CandelaBook-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../static/fonts/candela_book_macroman/CandelaBook-webfont.woff') format('woff'),
+  url('../static/fonts/candela_book_macroman/CandelaBook-webfont.ttf') format('truetype'),
+  url('../static/fonts/candela_book_macroman/CandelaBook-webfont.svg#candela_boldbold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
