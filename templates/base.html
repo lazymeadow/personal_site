@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} - Audrey Mavra McCormick</title>
-    {% assets "scss_all" %}
-        <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+    {% assets 'css' %}
+        <link type="text/css" href="{{ ASSET_URL }}" rel="stylesheet"/>
     {% endassets %}
 </head>
 <body>

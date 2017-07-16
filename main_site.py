@@ -5,16 +5,9 @@ from models.art_blog import db
 
 app = Flask(__name__)
 
-# TODO make application configurations, so this isn't hardcoded for dev
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = \
-    'mysql+mysqldb://audrey:wjae98RY3@audreymavra-mysql.c9jbxcitzkqw.us-west-2.rds.amazonaws.com:3306/personal_site'
-
-db.init_app(app)
 assets = Environment(app)
-assets.url = app.static_url_path
-scss = Bundle('style.scss', filters='pyscss', output='all.css')
-assets.register('scss_all', scss)
+css_bundle = Bundle('style.less', output='style.css', filters=['less'], depends=('**/*.less'))
+assets.register('css', css_bundle)
 
 
 @app.route('/')
