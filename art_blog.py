@@ -26,6 +26,7 @@ def index():
         return render_template("art_blog/index.html", posts=posts)
     except Exception as e:
         print e
+	return 'There was an error retrieving the blog.'
 
 
 if __name__ == '__main__':
