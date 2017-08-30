@@ -2,3 +2,5 @@ pyscss
 flask
 flask-assets
 MySQL-python
+flask_sqlalchemy
+alembic

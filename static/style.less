@@ -6,16 +6,25 @@
 body {
   font: 100% @font-stack-book;
   text-align: center;
+  margin: 0;
 }
 
 .header {
   background-color: @color-primary;
-  width: 100%;
-  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 130px;
 
   h1 {
     color: white;
   }
+}
+
+.content {
+  position: relative;
+  top: 130px;
 }
 
 h1 {

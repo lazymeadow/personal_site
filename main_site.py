@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 from flask.ext.assets import Environment, Bundle
 
-from models.art_blog import db
-
 app = Flask(__name__)
 
 assets = Environment(app)
@@ -16,4 +14,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3579)
+    app.run(host='0.0.0.0', port=3579, debug=True)
